@@ -1,0 +1,99 @@
+@font-face {
+  font-family: myFont;
+  src: url(./asset/font/Rubik_Doodle_Shadow/RubikDoodleShadow-Regular.ttf);
+}
+::selection {
+  background-color: inherit;
+}
+html {
+  height: 100vh;
+  width: 100vw;
+  color: rgb(163, 252, 255);
+  font-size: 2rem;
+  font-family: myFont;
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(213, 247, 255),
+    rgb(71, 71, 255)
+  );
+}
+.side {
+  flex: 1;
+}
+.mainContainer {
+  display: flex;
+  flex: 3;
+}
+.main {
+  flex: 3;
+  border-radius: 20px;
+  background-color: rgba(10, 61, 155, 0.178);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  border-radius: 20px;
+  border: none;
+  padding-inline: 40px;
+  width: 900px;
+  height: 1100px;
+}
+#Fieldset {
+  height: 100%;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+}
+legend {
+  padding-top: 30px;
+  font-size: 2rem;
+}
+#Form {
+  display: flex;
+  height: 700px;
+}
+.labelContainer,
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+  text-align: left;
+}
+input {
+  height: 1.5rem;
+  width: 100%;
+  padding-inline: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+.buttonContainer{
+    height:100px;
+}
+.buttonContainer *{
+    height: 90px;
+    width:180px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: inherit;
+    border:none;
+    border-radius: 10px;
+}
+button:hover{
+    text-decoration:underline;
+    cursor: pointer;
+    background-color: rgba(1, 28, 78, 0.178);;   
+}
