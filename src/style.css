@@ -11,8 +11,12 @@ html {
   color: rgb(163, 252, 255);
   font-size: 2rem;
   font-family: myFont;
+  margin:0;
+  padding:0;
 }
 body {
+  margin:0;
+  padding: 0;
   height: 100%;
   width: 100%;
   display: flex;
@@ -79,6 +83,7 @@ input {
   padding-inline: 0.5rem;
   border-radius: 1rem;
   font-size: 1rem;
+  position: relative;
 }
 .buttonContainer{
     height:100px;
@@ -96,4 +101,10 @@ button:hover{
     text-decoration:underline;
     cursor: pointer;
     background-color: rgba(1, 28, 78, 0.178);;   
+}
+.formInvalid{
+  background-color: red;
+}
+.formValid{
+  background-color: lightgreen;
 }

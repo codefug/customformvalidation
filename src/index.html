@@ -19,7 +19,7 @@
         <div class="content">
           <fieldset id="Fieldset">
             <legend>Fug Airport</legend>
-            <form action="" method="post" id="Form">
+            <form action="" method="post" id="Form" novalidate>
               <div class="labelContainer">
                 <label for="emailInput">Email</label>
                 <label for="passwordInput">Password</label>
@@ -28,11 +28,33 @@
                 <label for="zipCode">Zip Code</label>
               </div>
               <div class="inputContainer">
-                <input type="email" id="emailInput" />
-                <input type="password" id="passwordInput" />
-                <input type="password" id="passwordConfirm" />
-                <input type="text" id="country"/>
-                <input type="text" id="zipCode"/>
+                <input
+                  type="email"
+                  id="emailInput"
+                  placeholder="example@example.com"
+                  pattern="^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$"
+                  required
+                />
+                <input
+                  type="password"
+                  id="passwordInput"
+                  pattern="^[a-zA-Z0-9]+$"
+                  required
+                />
+                <input
+                  type="password"
+                  id="passwordConfirm"
+                  placeholder="exactly equal to previous one"
+                  required
+                />
+                <input type="text" id="country" required />
+                <input
+                  type="text"
+                  id="zipCode"
+                  placeholder="5 numbers"
+                  pattern="^\d{5}$"
+                  required
+                />
               </div>
             </form>
             <div class="buttonContainer">
